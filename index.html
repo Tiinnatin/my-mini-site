@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>omnifood-Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="h-screen bg-heroBG bg-cover  bg-center flex flex-col item-center">
+    <div class="w-4/5 flex justify-between items-center m-2">
+    <img src="resources/logo-white.png" alt="Logo" class="w-24 h-24">
+    <ul class="flex text-white">
+   <li class="px-4 uppercase"><a class="hover:border-b-2 border-b-orange-500" href="#"> food delivery</a> </li>
+   <li class="px-4 uppercase"><a class="hover:border-b-2 border-b-orange-500" href="#">how it works</a></li>
+   <li class="px-4 uppercase"><a class="hover:border-b-2 border-b-orange-500" href="#">our cities</a></li>
+   <li class="px-4 uppercase"><a class="hover:border-b-2 border-b-orange-500" href="#">sing up</a></li>
+  </ul>
+</div>
+    <div class="w-4/5 absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4">
+        <h1 class="text-6xl uppercase text-white tracking-wide">Goodbye junk food.<br>Hello super healhy meals</h1>
+        <button class="mx-3 border-2 border-orange-500 rounded-full w-32 h-12 bg-orange-600 text-white">I&#900;m hungry</button>
+        <button class="border-2 border-orange-500 rounded-full w-32 h-12 text-white hover:bg-orange-600 duration-300">show me more </button>
+    </div>
+    </header>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              backgroundImage: {
+              'heroBG':"  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('resources/hero.jpg')",
+        
+              }
+            }
+          }
+        }
+      </script>
+</body>
+</html>
