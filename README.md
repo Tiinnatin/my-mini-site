@@ -1,1 +1,1 @@
-# my-mini-site
+# my-site
